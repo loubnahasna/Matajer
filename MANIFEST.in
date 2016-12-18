@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include matajer *.css
+recursive-include matajer *.csv
+recursive-include matajer *.html
+recursive-include matajer *.ico
+recursive-include matajer *.js
+recursive-include matajer *.json
+recursive-include matajer *.md
+recursive-include matajer *.png
+recursive-include matajer *.py
+recursive-include matajer *.svg
+recursive-include matajer *.txt
+recursive-exclude matajer *.pyc
