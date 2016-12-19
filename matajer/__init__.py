@@ -29,8 +29,16 @@ def update_order(order_name,order_price,customer_id,status,product_name,product_
     ord.customer_id = customer_id
     ord.status = status
 
-    ord.products[0].product_name = product_name
-    ord.products[0].product_price = product_price
-    ord.products[0].product_image = product_image
+    for t in ord.get("products"):
+        if(t.product_name == product_name):
+          t.product_name = product_name
+          t.product_price = product_price
+          t.product_image = product_image
+
 
     ord.save()
+
+
+#    ord.products[0].product_name = product_name
+#    ord.products[0].product_price = product_price
+#    ord.products[0].product_image = product_image
