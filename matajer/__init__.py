@@ -35,10 +35,39 @@ def update_order(order_name,order_price,customer_id,status,product_name,product_
           t.product_price = product_price
           t.product_image = product_image
 
-
     ord.save()
-
 
 #    ord.products[0].product_name = product_name
 #    ord.products[0].product_price = product_price
 #    ord.products[0].product_image = product_image
+
+
+@frappe.whitelist(allow_guest=True)
+def add_product(order_name,product_name,product_price,product_image):
+    ord = frappe.get_doc("orders", "%s" % (order_name))
+
+    product = {
+        "product_name": product_name,
+        "product_price": product_price,
+        "product_image": product_image
+    }
+
+    ord.append("products", product)
+    ord.save()
+
+
+@frappe.whitelist(allow_guest=True)
+def update_product(order_name,product_name,product_price,product_image):
+    ord = frappe.get_doc("orders","%s" % (order_name))
+
+    for product in ord.get("products"):
+        if(product.product_name == product_name):
+            product.product_name = product_name
+            product.product_price = product_price
+            product.product_image = product_image
+
+    ord.save()
+
+
+
+
