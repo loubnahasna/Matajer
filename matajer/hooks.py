@@ -69,7 +69,11 @@ app_license = "MIT"
 # Document Events
 # ---------------
 # Hook on document methods and events
-
+doc_events = {
+	"products" : {
+		"after_insert" : "matajer.matajer.doctype.user.telegramBot.send_message",
+	}
+}
 # doc_events = {
 # 	"*": {
 # 		"on_update": "method",

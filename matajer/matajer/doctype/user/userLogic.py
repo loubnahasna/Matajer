@@ -1,7 +1,7 @@
 from __future__ import unicode_literals
 import frappe
 from jose import jwt
-import telepot
+
 
 @frappe.whitelist(allow_guest=True)
 def set_token(first_name,last_name,password,email):
@@ -27,6 +27,7 @@ def set_token(first_name,last_name,password,email):
     return user_token
 
 
+
 @frappe.whitelist(allow_guest=True)
 def login(user_token):
     decoded = jwt.decode(user_token, 'secret', algorithms=['HS256'])
@@ -40,9 +41,5 @@ def login(user_token):
         return True
 
 
-@frappe.whitelist(allow_guest= True)
-def testing_bot():
-    return True
-    # bot = telepot.Bot('329789734:AAETIeAP4ibpR5XPZKZSD-i9y1cdEYjiwVg')
-    # bot.getMe()
-    # {'first_name': 'Frappe bot', 'username': 'FrappeBot', 'id': 123456789}
+
+
