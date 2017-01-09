@@ -78,6 +78,15 @@ app_license = "MIT"
 #	}
 # }
 
+
+doc_events = {
+    "products": {
+        "after_insert": "matajer.matajer.doctype.products.products.send_telegram",
+    }
+ }
+
+
+
 # Scheduled Tasks
 # ---------------
 

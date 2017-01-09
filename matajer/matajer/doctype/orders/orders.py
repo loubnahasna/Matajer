@@ -10,7 +10,6 @@ from frappe.model.document import Document
 class orders(Document):
     pass
 
-
 @frappe.whitelist(allow_guest=True)
 def set_order(order_price, customer_id, status, product_list):
     try:
@@ -113,3 +112,6 @@ def update_order(order_id, product_list):
         return {
             "data": False
         }
+
+
+
