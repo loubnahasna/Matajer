@@ -18,9 +18,6 @@ def send_telegram(doc, method):
     print(r.status_code, r.reason)
 
 
-
-
-
 @frappe.whitelist(allow_guest=True)
 def set_products(product_id,product_name,price):
     try:
@@ -46,6 +43,7 @@ def set_products(product_id,product_name,price):
         return {
             "data": False
         }
+
 
 
 
