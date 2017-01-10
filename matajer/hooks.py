@@ -3,12 +3,21 @@ from __future__ import unicode_literals
 from . import __version__ as app_version
 
 app_name = "matajer"
+<<<<<<< HEAD
 app_title = "matajer"
 app_publisher = "loubna"
 app_description = "orders and products"
 app_icon = "octicon octicon-file-directory"
 app_color = "grey"
 app_email = "loubna.hasna@exa.com.sa"
+=======
+app_title = "Matajer"
+app_publisher = "Ghadeer"
+app_description = "Desc"
+app_icon = "octicon octicon-file-directory"
+app_color = "grey"
+app_email = "f@gmail.com"
+>>>>>>> 7880af29cfd90e766ac20e5108c5491f3c7cdac6
 app_license = "MIT"
 
 # Includes in <head>
@@ -69,7 +78,15 @@ app_license = "MIT"
 # Document Events
 # ---------------
 # Hook on document methods and events
+<<<<<<< HEAD
 
+=======
+doc_events = {
+	"products" : {
+		"after_insert" : "matajer.matajer.doctype.user.telegramBot.send_message",
+	}
+}
+>>>>>>> 7880af29cfd90e766ac20e5108c5491f3c7cdac6
 # doc_events = {
 # 	"*": {
 # 		"on_update": "method",
@@ -78,6 +95,7 @@ app_license = "MIT"
 #	}
 # }
 
+<<<<<<< HEAD
 
 doc_events = {
     "products": {
@@ -87,6 +105,8 @@ doc_events = {
 
 
 
+=======
+>>>>>>> 7880af29cfd90e766ac20e5108c5491f3c7cdac6
 # Scheduled Tasks
 # ---------------
 

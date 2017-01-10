@@ -15,9 +15,15 @@ requirements = parse_requirements("requirements.txt", session="")
 setup(
 	name='matajer',
 	version=version,
+<<<<<<< HEAD
 	description='orders and products',
 	author='loubna',
 	author_email='loubna.hasna@exa.com.sa',
+=======
+	description='Desc',
+	author='Ghadeer',
+	author_email='f@gmail.com',
+>>>>>>> 7880af29cfd90e766ac20e5108c5491f3c7cdac6
 	packages=find_packages(),
 	zip_safe=False,
 	include_package_data=True,
