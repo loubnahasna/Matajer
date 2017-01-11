@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-<<<<<<< HEAD
+
 # Copyright (c) 2015, loubna and contributors
 # For license information, please see license.txt
 
@@ -113,17 +113,3 @@ def update_order(order_id, product_list):
         return {
             "data": False
         }
-
-=======
-# Copyright (c) 2015, Ghadeer and contributors
-# For license information, please see license.txt
-
-from __future__ import unicode_literals
-import frappe
-from frappe.model.document import Document
-
-class orders(Document):
-	pass
->>>>>>> 7880af29cfd90e766ac20e5108c5491f3c7cdac6
-
-
