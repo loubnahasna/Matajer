@@ -19,7 +19,8 @@ def test_token(token):
         flag = False
         code = jwt.decode(token, secret)
         userid = code['userid']
-        list = frappe.get_list('users', filters=[["users", "name", "=", userid]])
+        list = frappe.get_list('users',
+                               filters=[["users", "name", "=", userid]],ignore_permissions = True)
         if len(list) == 1:
             flag = True
         frappe.db.commit()
