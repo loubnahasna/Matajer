@@ -2,7 +2,6 @@
  "allow_copy": 0, 
  "allow_import": 0, 
  "allow_rename": 0, 
-<<<<<<< HEAD
  "autoname": "ORD.#####", 
  "beta": 0, 
  "creation": "2017-01-06 17:13:15.574776", 
@@ -10,15 +9,6 @@
  "docstatus": 0, 
  "doctype": "DocType", 
  "document_type": "", 
-=======
- "autoname": "ORD-.#####", 
- "beta": 0, 
- "creation": "2016-12-18 14:34:15.163826", 
- "custom": 0, 
- "docstatus": 0, 
- "doctype": "DocType", 
- "document_type": "Document", 
->>>>>>> 7880af29cfd90e766ac20e5108c5491f3c7cdac6
  "editable_grid": 1, 
  "engine": "InnoDB", 
  "fields": [
@@ -28,22 +18,14 @@
    "collapsible": 0, 
    "columns": 0, 
    "fieldname": "order_price", 
-<<<<<<< HEAD
    "fieldtype": "Float", 
-=======
-   "fieldtype": "Data", 
->>>>>>> 7880af29cfd90e766ac20e5108c5491f3c7cdac6
    "hidden": 0, 
    "ignore_user_permissions": 0, 
    "ignore_xss_filter": 0, 
    "in_filter": 0, 
    "in_list_view": 0, 
    "in_standard_filter": 0, 
-<<<<<<< HEAD
    "label": "order_price", 
-=======
-   "label": "Order Price", 
->>>>>>> 7880af29cfd90e766ac20e5108c5491f3c7cdac6
    "length": 0, 
    "no_copy": 0, 
    "permlevel": 0, 
@@ -71,11 +53,7 @@
    "in_filter": 0, 
    "in_list_view": 0, 
    "in_standard_filter": 0, 
-<<<<<<< HEAD
    "label": "customer_id", 
-=======
-   "label": "Customer Id", 
->>>>>>> 7880af29cfd90e766ac20e5108c5491f3c7cdac6
    "length": 0, 
    "no_copy": 0, 
    "permlevel": 0, 
@@ -103,45 +81,10 @@
    "in_filter": 0, 
    "in_list_view": 0, 
    "in_standard_filter": 0, 
-<<<<<<< HEAD
    "label": "status", 
    "length": 0, 
    "no_copy": 0, 
    "options": "unpaid\npaid", 
-=======
-   "label": "Status", 
-   "length": 0, 
-   "no_copy": 0, 
-   "options": "Paid\nUnpaid", 
-   "permlevel": 0, 
-   "precision": "", 
-   "print_hide": 0, 
-   "print_hide_if_no_value": 0, 
-   "read_only": 0, 
-   "remember_last_selected_value": 0, 
-   "report_hide": 0, 
-   "reqd": 0, 
-   "search_index": 0, 
-   "set_only_once": 0, 
-   "unique": 0
-  }, 
-  {
-   "allow_on_submit": 0, 
-   "bold": 0, 
-   "collapsible": 0, 
-   "columns": 0, 
-   "fieldname": "products_section", 
-   "fieldtype": "Section Break", 
-   "hidden": 0, 
-   "ignore_user_permissions": 0, 
-   "ignore_xss_filter": 0, 
-   "in_filter": 0, 
-   "in_list_view": 0, 
-   "in_standard_filter": 0, 
-   "label": "Products Section", 
-   "length": 0, 
-   "no_copy": 0, 
->>>>>>> 7880af29cfd90e766ac20e5108c5491f3c7cdac6
    "permlevel": 0, 
    "precision": "", 
    "print_hide": 0, 
@@ -167,17 +110,10 @@
    "in_filter": 0, 
    "in_list_view": 0, 
    "in_standard_filter": 0, 
-<<<<<<< HEAD
    "label": "products", 
    "length": 0, 
    "no_copy": 0, 
    "options": "order_products", 
-=======
-   "label": "Products", 
-   "length": 0, 
-   "no_copy": 0, 
-   "options": "products", 
->>>>>>> 7880af29cfd90e766ac20e5108c5491f3c7cdac6
    "permlevel": 0, 
    "precision": "", 
    "print_hide": 0, 
@@ -201,15 +137,9 @@
  "issingle": 0, 
  "istable": 0, 
  "max_attachments": 0, 
-<<<<<<< HEAD
  "modified": "2017-01-08 11:57:28.539006", 
  "modified_by": "Administrator", 
  "module": "matajer", 
-=======
- "modified": "2016-12-18 16:03:20.776255", 
- "modified_by": "Administrator", 
- "module": "Matajer", 
->>>>>>> 7880af29cfd90e766ac20e5108c5491f3c7cdac6
  "name": "orders", 
  "name_case": "", 
  "owner": "Administrator", 
@@ -229,11 +159,7 @@
    "print": 1, 
    "read": 1, 
    "report": 1, 
-<<<<<<< HEAD
    "role": "Librarian", 
-=======
-   "role": "Guest", 
->>>>>>> 7880af29cfd90e766ac20e5108c5491f3c7cdac6
    "set_user_permissions": 0, 
    "share": 1, 
    "submit": 0, 
@@ -245,9 +171,6 @@
  "read_only_onload": 0, 
  "sort_field": "modified", 
  "sort_order": "DESC", 
-<<<<<<< HEAD
  "track_changes": 1, 
-=======
->>>>>>> 7880af29cfd90e766ac20e5108c5491f3c7cdac6
  "track_seen": 0
 }
